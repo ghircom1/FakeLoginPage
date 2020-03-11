@@ -1,0 +1,16 @@
+{
+  "name": "fakeloginpage",
+  "version": "1.0.0",
+  "description": "basic website",
+  "main": "index.js",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html --hmr-port 1235",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
