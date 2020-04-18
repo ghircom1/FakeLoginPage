@@ -1,5 +1,5 @@
 export DOCKER_TLS_VERIFY="1"
 export DOCKER_HOST="tcp://192.168.99.101:2376"
-export DOCKER_CERT_PATH="C:\Users\Jaron\.docker\machine\machines\default"
-export DOCKER_MACHINE_NAME="default"
+export DOCKER_CERT_PATH="C:\Users\Jaron\.docker\machine\machines\docker"
+export DOCKER_MACHINE_NAME="docker"
 export COMPOSE_CONVERT_WINDOWS_PATHS="true"
