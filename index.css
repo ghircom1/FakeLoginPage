@@ -1,20 +1,13 @@
-div.login {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    left: 400px;
-}
-
 #name {
-    left: 263px;
+    left: 1048px;
     top: 115px;
     position: relative;
     border: 0 solid #E5D5FD;
 }
 
 #pass {
-    left: 263px;
-    top: 127px;
+    left: 882px;
+    top: 162px;
     position: relative;
     border: 0 solid #E5D5FD;
 }
@@ -23,7 +16,7 @@ div.login {
     display: block;
     margin: 0 auto;
     left: 281px;
-    top: 133px;
+    top: 210px;
     position: relative;
     color: #FFFFFF;
     border: 2px solid #0B6EFD;
