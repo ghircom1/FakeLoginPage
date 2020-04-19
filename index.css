@@ -1,15 +1,16 @@
+input {
+    position: relative;
+    border: 0 solid #E5D5FD;
+}
+
 #name {
     left: 1048px;
     top: 115px;
-    position: relative;
-    border: 0 solid #E5D5FD;
 }
 
 #pass {
     left: 882px;
     top: 162px;
-    position: relative;
-    border: 0 solid #E5D5FD;
 }
 
 #submit {
@@ -17,11 +18,9 @@
     margin: 0 auto;
     left: 281px;
     top: 210px;
-    position: relative;
     color: #FFFFFF;
     border: 2px solid #0B6EFD;
     background-color: #0B6EFD;
-    /*background-color:  black;*/
     width: 204px;
     height: 25px;
 }
