@@ -1,3 +1,14 @@
+### Run locally with xampp
+
+1. Run xampp as admin
+2. Start apache and mysql
+3. Open browser to http://localhost/fakebank or http://10.0.2.2/fakebank on vm
+4. To update localhost, copy whatever files you updated to C:xampp/htdocs/fakebank
+
+
+
+### Run locally with docker
+
 1. Start up docker machine `$ docker-machine start docker`
 2. Run env command `$ docker-machine env docker`
 3. Run the following in git bash:
