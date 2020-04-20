@@ -1,36 +1,37 @@
 input {
-    position: relative;
-    border: 0 solid #E5D5FD;
+    position: absolute;
+    border: 0 solid #F7F7F7;
+    background-color: #F7F7F7;
 }
 
 #name {
-    left: 1048px;
-    top: 115px;
+    left: 13%;
+    top: 22%;
 }
 
 #pass {
-    left: 882px;
-    top: 162px;
+    left: 13%;
+    top: 34%;
 }
 
 #submit {
     display: block;
     margin: 0 auto;
-    left: 281px;
-    top: 210px;
+    left: 20%;
+    top: 53%;
     color: #FFFFFF;
     border: 2px solid #0B6EFD;
     background-color: #0B6EFD;
-    width: 204px;
-    height: 25px;
+    width: 60%;
+    height: 6%;
 }
 
 #container {
-    background-image:url(bank_snapshot.png);
+    background-image:url(bank_mobile_screenshot.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     position: absolute;
 }
